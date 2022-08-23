@@ -35,7 +35,7 @@ $(NAME):	$(OBJS)
 			@$(LIB) $(NAME) $(OBJS)
 
 .c.o:
-			@${CC} ${CFLGS} -c $< -o ${<:.c=.o}
+			@${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 clean:
 			@$(RM) $(OBJS)
